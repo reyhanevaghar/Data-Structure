@@ -1,3 +1,4 @@
+
 متدی به صف حلقوی اضافه کنید که 5 لاگ آخر را گزارش دهد
 class CircularQueue:
     def __init__(self, size=10):
@@ -40,7 +41,7 @@ class CircularQueue:
 
         return x
 
-    # ✅ متد گزارش ۵ لاگ آخر
+    #  متد گزارش ۵ لاگ آخر
     def last_five_logs(self):
         if self.is_empty():
             print("No logs available")
