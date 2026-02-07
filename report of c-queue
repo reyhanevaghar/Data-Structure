@@ -1,3 +1,4 @@
+متدی به صف حلقوی اضافه کنید که زمان پنج بار گذشته که صف پر شده است را گزارش دهد
 from datetime import datetime
 
 class CircularQueue:
@@ -28,7 +29,7 @@ class CircularQueue:
 
         self.queue[self.rear] = x
 
-    # ✅ ثبت زمان پر شدن صف
+    #  ثبت زمان پر شدن صف
     def _save_full_time(self):
         time_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         self.full_times.append(time_now)
@@ -36,7 +37,7 @@ class CircularQueue:
         if len(self.full_times) > 5:
             self.full_times.pop(0)
 
-    # ✅ متد گزارش ۵ زمان آخر پر شدن صف
+    # متد گزارش ۵ زمان آخر پر شدن صف
     def report_full_times(self):
         if not self.full_times:
             print("Queue has never been full")
@@ -52,5 +53,4 @@ class CircularQueue:
 
 
 
-سلام 
-متدی به صف حلقوی اضافه کنید که زمان پنج بار گذشته که صف پر شده است را گزارش دهد
+
