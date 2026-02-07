@@ -1,3 +1,4 @@
+متدی به صف حلقوی اضافه کنید که 5 لاگ آخر را گزارش دهد
 class CircularQueue:
     def __init__(self, size=10):
         self.size = size
@@ -83,5 +84,4 @@ cq.last_five_logs()
 
 
 
-سلام 
-متدی به صف حلقوی اضافه کنید که 5 لاگ آخر را گزارش دهد
+ 
