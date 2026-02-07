@@ -1,3 +1,4 @@
+تابعی بنویسید که ابتدا هزار شی از نوع صف حلقوی و هزار شی از نوع پشته را ایجاد کند سپس داده های معتبر صف ها را بصورت معکوس در پشته ها ذخیره کند
 class CircularQueue:
     def __init__(self, size=10):
         self.size = size
@@ -20,7 +21,7 @@ class CircularQueue:
             self.rear = (self.rear + 1) % self.size
         self.queue[self.rear] = x
 
-    # ✅ متد تبدیل صف حلقوی به صف ساده
+    #  متد تبدیل صف حلقوی به صف ساده
     def to_simple_queue(self):
         if self.is_empty():
             return
@@ -47,5 +48,4 @@ class CircularQueue:
 
 
 
-سلام 
-تابعی بنویسید که ابتدا هزار شی از نوع صف حلقوی و هزار شی از نوع پشته را ایجاد کند سپس داده های معتبر صف ها را بصورت معکوس در پشته ها ذخیره کند
+ 
