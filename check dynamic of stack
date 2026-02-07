@@ -1,7 +1,8 @@
+متدی به پشته اضافه کنید که هر بار فراخوانی شود اگر پشته استاتیک بود داینامیک شود و اگر داینامیک بود استاتیک شود
 class Stack:
     def __init__(self, size=5):
         self.size = size
-        self.is_static = True   # شروع به صورت استاتیک
+        self.is_static = True  
         self.stack = [None] * size
         self.top = -1
 
@@ -32,7 +33,7 @@ class Stack:
             return self.top == -1
         return len(self.stack) == 0
 
-    # ✅ متد تغییر نوع پشته
+  
     def toggle_stack_type(self):
         if self.is_static:
             # استاتیک → داینامیک
@@ -45,7 +46,7 @@ class Stack:
             print("Stack changed to Dynamic")
 
         else:
-            # داینامیک → استاتیک
+            
             new_stack = [None] * self.size
             n = min(len(self.stack), self.size)
 
@@ -87,5 +88,4 @@ s.display()
 
 
 
-سلام 
-متدی به پشته اضافه کنید که هر بار فراخوانی شود اگر پشته استاتیک بود داینامیک شود و اگر داینامیک بود استاتیک شود
+ 
