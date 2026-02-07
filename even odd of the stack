@@ -1,5 +1,5 @@
 class Stack:
-    def __init__(self):
+    def __init__(self,item):
         self.items = []
 
     def push(self, x):
@@ -10,6 +10,11 @@ class Stack:
             print("Stack Underflow")
             return None
         return self.items.pop()
+    def peek(self):
+        if len(self.item)==0:
+            print('stack is empty)
+            return -1
+        return self.item    
 
     def is_empty(self):
         return len(self.items) == 0
@@ -17,12 +22,11 @@ class Stack:
     def display(self):
         print(self.items)
 
-    # ✅ متد اولویت‌بندی زوج و فرد
     def prioritize_even_odd(self):
         even = []
         odd = []
 
-        # تخلیه پشته
+     
         while not self.is_empty():
             x = self.pop()
             if x % 2 == 0:
@@ -30,7 +34,7 @@ class Stack:
             else:
                 odd.append(x)
 
-        # بازگرداندن: اول زوج‌ها، بعد فردها
+      
         for x in reversed(odd):
             self.push(x)
 
@@ -57,5 +61,4 @@ s.display()
 
 
 
-سلام 
-متدی به پشته اضافه کنید که پشته را بر اساس زوج و فرد بودن داده هایشان اولویت بندی کند
+
