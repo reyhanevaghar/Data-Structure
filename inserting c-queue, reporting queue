@@ -1,4 +1,4 @@
-# ---------- Circular Queue ----------
+متدی به صف حلقوی اضافه کنید که زمان پنج بار گذشته که صف پر شده است را گزارش دهد
 class CircularQueue:
     def __init__(self, size=10):
         self.size = size
@@ -127,5 +127,4 @@ class PriorityCircularQueue(CircularQueue, Stack):
 
 
 
-سلام 
-متدی به صف حلقوی اضافه کنید که زمان پنج بار گذشته که صف پر شده است را گزارش دهد
+ 
